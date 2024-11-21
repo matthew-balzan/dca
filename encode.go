@@ -221,7 +221,6 @@ func (e *EncodeSession) run() {
 		"-packet_loss", strconv.Itoa(e.options.PacketLoss),
 		"-threads", strconv.Itoa(e.options.Threads),
 		"-ss", strconv.Itoa(e.options.StartTime),
-		"-filter:a", fmt.Sprintf("volume=%.2f", e.options.Volume),
 	}
 
 	if e.options.AudioFilter != "" {
